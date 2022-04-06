@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprits - Drink's Leisure</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./images/sprits-white.png" alt="" width="60" height="20"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Juices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./alcohol.html">Alcohol Drinks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./free.html">Alcohol Free Drinks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h3 class="text-center mt-3">Sprits - Drink's Leisure</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ms-3">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+    </header>
+    <main>
+        <div class="container"> <div class=" text-center mt-5 ">
+            <h1>Sprits Contact Form</h1>
+        </div>
+        <div class="row ">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                        <div class="container">
+                            <form id="contact-form" role="form">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group"> <label for="form_name">Firstname *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."> </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group"> <label for="form_lastname">Lastname *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                    <option value="" selected disabled>--Select Your Issue--</option>
+                                                    <option>Make an order</option>
+                                                    <option>Request receipt</option>
+                                                    <option>My order has not arrived yet</option>
+                                                    <option>Other</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                        </div>
+                                        <div class="col-md-12 text-center"> <input type="submit" class="btn btn-dark btn-send mt-2 pt-2 btn-block" value="Send Message"> </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- /.8 -->
+            </div> <!-- /.row-->
+        </div>
+    </div>     
+    </main>
+    <footer class="text-center p-2">
+        <small>© Copyright 2022 - Sprits - Drink's Leisure</small>
+        <br>
+        <small>Created with ❤️ and Enthusiasm by <a href="https://github.com/mariosdaskalas" target="_blank">@mariosdaskalas</a></small>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -29,12 +29,20 @@
                     <a class="nav-link" href="./alcohol.html">Alcohol Drinks</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Alcohol Free Drinks</a>
+                    <a class="nav-link" href="./free.html">Alcohol Free Drinks</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
+                  <button type="button" class="btn btn-light position-relative">
+                    Orders
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      <span id="countShow">0</span>
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
                 </ul>
+                
               </div>
             </div>
           </nav>
@@ -54,7 +62,21 @@
                     <div class="card-body">
                         <div class="card-title text-center"><b>Order Orange Juice</b></div>
                         <div class="card-text text-center">Orange juice is a liquid extract of the orange tree fruit, produced by squeezing or reaming oranges. It comes in several different varieties, including blood orange, navel oranges, valencia orange, clementine, and tangerine.</div>
-                        <a href="#" class="btn btn-dark">Order</a>
+                        <button type="button" class="btn btn-dark" id="liveToastBtnOrange">Order</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToastOrange" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+      <strong class="me-auto"></strong>
+      <small>1 seconds ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Success! You have ordered an Orange Juice.
+    </div>
+  </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -99,6 +121,7 @@
         <br>
         <small>Created with ❤️ and Enthusiasm by <a href="https://github.com/mariosdaskalas" target="_blank">@mariosdaskalas</a></small>
     </footer>
+    <script src="./main.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
