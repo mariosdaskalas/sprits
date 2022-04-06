@@ -1,0 +1,7 @@
+body {
+    font-family: 'Bad Script', cursive;
+}
+img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
