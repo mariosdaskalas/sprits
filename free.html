@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html"><img src="./images/sprits-white.png" alt="" width="60" height="20"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,18 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
+                  <button type="button" class="btn btn-light position-relative">
+                    Cart
+                    <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                      <span id="countShow">0</span>
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
                 </ul>
               </div>
             </div>
           </nav>
-        <h3 class="text-center mt-3">Sprits - Drink's Leisure</h3>
+        <h3 class="text-center title">Sprits - Drink's Leisure</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb ms-3">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -54,7 +61,20 @@
                     <div class="card-body">
                         <div class="card-title text-center"><b>Order Iced Tea</b></div>
                         <div class="card-text text-center">Iced tea (or ice tea) is a form of cold tea. Though usually served in a glass with ice, it can refer to any tea that has been chilled or cooled. It may be sweetened with sugar, syrup and/or apple slices.</div>
-                        <a href="#" class="btn btn-dark">Order</a>
+                        <button type="button" class="btn btn-dark" id="liveToastBtnTea">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastTea" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered an Iced Tea.
+      </div>
+    </div>
+  </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +84,20 @@
                         <div class="card-body">
                             <div class="card-title text-center"><b>Order Mocktail</b></div>
                             <div class="card-text text-center">An alcohol-free or non-alcoholic drink, also known as a temperance drink, is a version of an alcoholic drink made without alcohol, or with the alcohol removed or reduced to almost zero.</div>
-                            <a href="#" class="btn btn-dark">Order</a>
+                            <button type="button" class="btn btn-dark" id="liveToastBtnMock">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastMock" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered a Mocktail.
+      </div>
+    </div>
+  </div>
                         </div>
                 </div>
                 </div>
@@ -72,11 +105,24 @@
                 <div class="row text-center mt-5">
                     <div class="col-6 d-flex justify-content-end">
                         <div class="card" style="width: 40rem;">
-                            <img class="rounded img-fluid" src="./images/pina-colada.jpg" alt="Buy Piña colada">
+                            <img class="rounded img-fluid pina" src="./images/pina-colada.jpg" alt="Buy Piña colada">
                             <div class="card-body">
                                 <div class="card-title text-center"><b>Order Piña colada</b></div>
                                 <div class="card-text text-center">The piña colada (/ˌpiːnjə koʊˈlɑːdə, -nə-, -kə-/; Spanish: piña [ˈpiɲa], "pineapple", and colada [koˈlaða], "strained") is a cocktail made with rum, cream of coconut or coconut milk, and pineapple juice, usually served either blended or shaken with ice. It may be garnished with either a pineapple wedge, maraschino cherry, or both. </div>
-                                <a href="#" class="btn btn-dark">Order</a>
+                                <button type="button" class="btn btn-dark" id="liveToastBtnPina">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastPina" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered a Piña colada.
+      </div>
+    </div>
+  </div>
                             </div>
                         </div>
                     </div>
@@ -86,7 +132,20 @@
                                 <div class="card-body">
                                     <div class="card-title text-center"><b>Order Coca Cola</b></div>
                                     <div class="card-text text-center">Coca-Cola, or Coke, is a carbonated soft drink manufactured by the Coca-Cola Company. Originally marketed as a temperance drink and intended as a patent medicine, it was invented in the late 19th century by John Stith Pemberton in Atlanta, Georgia.</div>
-                                    <a href="#" class="btn btn-dark">Order</a>
+                                    <button type="button" class="btn btn-dark" id="liveToastBtnCoca">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastCoca" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered a Coca Cola.
+      </div>
+    </div>
+  </div>
                                 </div>
                         </div>
                         </div>
@@ -97,6 +156,7 @@
         <br>
         <small>Created with ❤️ and Enthusiasm by <a href="https://github.com/mariosdaskalas" target="_blank">@mariosdaskalas</a></small>
     </footer>
+    <script src="./free.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

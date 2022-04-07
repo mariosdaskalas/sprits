@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html"><img src="./images/sprits-white.png" alt="" width="60" height="20"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,8 @@
                     <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
                   <button type="button" class="btn btn-light position-relative">
-                    Orders
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    Cart
+                    <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
                       <span id="countShow">0</span>
                       <span class="visually-hidden">unread messages</span>
                     </span>
@@ -46,9 +46,9 @@
               </div>
             </div>
           </nav>
-        <h3 class="text-center mt-3">Sprits - Drink's Leisure</h3>
+        <h3 class="text-center title">Sprits - Drink's Leisure</h3>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb ms-3">
+            <ol class="breadcrumb m-3">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Juices</li>
             </ol>
@@ -69,7 +69,7 @@
     <div class="toast-header">
       <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
       <strong class="me-auto"></strong>
-      <small>1 seconds ago</small>
+      <small>1 second ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
@@ -88,7 +88,20 @@
                             <div class="card-text text-center">Lemonade is a sweetened lemon-flavored beverage.
 
                                 There are varieties of lemonade found throughout the world.[1] In North America and South Asia, cloudy lemonade dominates. It is traditionally a homemade drink using lemon juice, water, and a sweetener.</div>
-                            <a href="#" class="btn btn-dark">Order</a>
+                                <button type="button" class="btn btn-dark" id="liveToastBtnLemonade">Order</button>
+                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                    <div id="liveToastLemonade" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                      <div class="toast-header">
+                                        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+                                        <strong class="me-auto"></strong>
+                                        <small>1 second ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                      </div>
+                                      <div class="toast-body">
+                                        Success! You have ordered an Lemonade.
+                                      </div>
+                                    </div>
+                                  </div>
                         </div>
                 </div>
                 </div>
@@ -100,7 +113,20 @@
                             <div class="card-body">
                                 <div class="card-title text-center"><b>Order Cherry Juice</b></div>
                                 <div class="card-text text-center">Cherry juice is a fruit juice consisting of the juice of cherries. It is consumed as a beverage and used as an ingredient in various foods, processed foods and beverages. It is also marketed as a health supplement. It is produced by hot- or cold-pressing cherries, collecting the juice, and then filtering and pasteurizing it.</div>
-                                <a href="#" class="btn btn-dark">Order</a>
+                                <button type="button" class="btn btn-dark" id="liveToastBtnCherry">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastCherry" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered an Cherry Juice.
+      </div>
+    </div>
+  </div>
                             </div>
                         </div>
                     </div>
@@ -110,7 +136,20 @@
                                 <div class="card-body">
                                     <div class="card-title text-center"><b>Order Apple Juice</b></div>
                                     <div class="card-text text-center">Apple juice is a fruit juice made by the maceration and pressing of an apple. The resulting expelled juice may be further treated by enzymatic and centrifugal clarification to remove the starch and pectin, which holds fine particulate in suspension.</div>
-                                    <a href="#" class="btn btn-dark">Order</a>
+                                    <button type="button" class="btn btn-dark" id="liveToastBtnApple">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastApple" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered an Apple Juice.
+      </div>
+    </div>
+  </div>
                                 </div>
                         </div>
                         </div>

@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html"><img src="./images/sprits-white.png" alt="" width="60" height="20"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,18 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
+                  <button type="button" class="btn btn-light position-relative">
+                    Cart
+                    <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                      <span id="countShow">0</span>
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
                 </ul>
               </div>
             </div>
           </nav>
-        <h3 class="text-center mt-3">Sprits - Drink's Leisure</h3>
+        <h3 class="text-center title">Sprits - Drink's Leisure</h3>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb ms-3">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -54,7 +61,20 @@
                     <div class="card-body">
                         <div class="card-title text-center"><b>Order Heineken Beer</b></div>
                         <div class="card-text text-center">Heineken Lager Beer (Dutch: Heineken Pilsener), or simply Heineken (pronounced [ˈɦɛinəkə(n)]) is a pale lager beer with 5% alcohol by volume produced by the Dutch brewing company Heineken N.V. Heineken beer is sold in a green bottle with a red star.</div>
-                        <a href="#" class="btn btn-dark">Order</a>
+                        <button type="button" class="btn btn-dark" id="liveToastBtnHeineken">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastHeineken" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered an Heineken Beer.
+      </div>
+    </div>
+  </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +84,20 @@
                         <div class="card-body">
                             <div class="card-title text-center"><b>Order Amstel Beer</b></div>
                             <div class="card-text text-center">Amstel Brewery (Dutch: Amstelbrouwerij, Dutch pronunciation: [ˈɑmstəlbrʌwəˌrɛi̯]) is a Dutch brewery founded in 1870 on the Mauritskade in Amsterdam. It was taken over by Heineken International in 1968, and the brewing plant closed down in 1982, with production moving to the main Heineken plant at Zoeterwoude.</div>
-                            <a href="#" class="btn btn-dark">Order</a>
+                            <button type="button" class="btn btn-dark" id="liveToastBtnAmstel">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastAmstel" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered an Amstel Beer.
+      </div>
+    </div>
+  </div>
                         </div>
                 </div>
                 </div>
@@ -78,7 +111,20 @@
                                 <div class="card-text text-center">Jack Daniel's is a brand of Tennessee whiskey. It is produced in Lynchburg, Tennessee, by the Jack Daniel Distillery, which has been owned by the Brown–Forman Corporation since 1956.
 
                                     Packaged in square bottles, Jack Daniel's "Black Label" Tennessee whiskey sold 12.5 million nine-liter cases in the fiscal year ending on April 30, 2017.</div>
-                                <a href="#" class="btn btn-dark">Order</a>
+                                    <button type="button" class="btn btn-dark" id="liveToastBtnJack">Order</button>
+                                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                        <div id="liveToastJack" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                          <div class="toast-header">
+                                            <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+                                            <strong class="me-auto"></strong>
+                                            <small>1 second ago</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                          </div>
+                                          <div class="toast-body">
+                                            Success! You have ordered an Jack Daniels.
+                                          </div>
+                                        </div>
+                                      </div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +134,20 @@
                                 <div class="card-body">
                                     <div class="card-title text-center"><b>Order Lola Beer</b></div>
                                     <div class="card-text text-center">Beer is one of the oldest and most widely consumed alcoholic drinks in the world, and the third most consumed drink overall after water and tea. It is produced by the brewing and fermentation of starches, mainly derived from cereal grains.</div>
-                                    <a href="#" class="btn btn-dark">Order</a>
+                                    <button type="button" class="btn btn-dark" id="liveToastBtnLola">Order</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToastLola" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./images/sprits.png" width="40" class="rounded me-2" alt="Notification Icon">
+        <strong class="me-auto"></strong>
+        <small>1 second ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Success! You have ordered a Lola Beer.
+      </div>
+    </div>
+  </div>
                                 </div>
                         </div>
                         </div>
@@ -99,6 +158,7 @@
         <br>
         <small>Created with ❤️ and Enthusiasm by <a href="https://github.com/mariosdaskalas" target="_blank">@mariosdaskalas</a></small>
     </footer>
+    <script src="./alcohol.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

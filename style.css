@@ -5,3 +5,9 @@ img:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
+.title {
+    margin-top: 4.5rem;
+}
+.pina {
+    filter: brightness(200%);
+}
